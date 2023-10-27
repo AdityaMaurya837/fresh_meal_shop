@@ -313,7 +313,6 @@ nav .navbar a {
 .nav-background {
     width: 100%;
     height: 100%;
-    /* color: #F0F0F0; */
     position: absolute;
     top: 0;
     left: 0;
@@ -324,18 +323,14 @@ nav .navbar a {
 .nav-trigger {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
     padding: 15px;
     display: none;
 }
 
-.nav-trigger svg {
-    transform: rotate(90deg) scaleX(-1);
-    -webkit-transform: rotate(90deg) scaleX(-1);
-    -moz-transform: rotate(90deg) scaleX(-1);
-    -ms-transform: rotate(90deg) scaleX(-1);
-    -o-transform: rotate(90deg) scaleX(-1);
+.nav-trigger img {
+ 
 
     width: 40px;
     height: 40px;
@@ -511,11 +506,11 @@ section.top-products {
     background: #F0F0F0;
 }
 
-section.top-products .food-slider {
+section.top-products .food-salad {
     display: flex;
 }
 
-section.top-products .food-slider .food-card {
+section.top-products .food-salad .food-card {
     margin: 10px;
     background: #FFFFFF;
     padding: 1.5rem 0;
@@ -527,7 +522,7 @@ section.top-products .food-slider .food-card {
     -o-border-radius: 4px;
 }
 
-section.top-products .food-slider .food-card .product-image img {
+section.top-products .food-salad .food-card .product-image img {
     width: 80%;
     height: 200px;
     object-fit: contain;
@@ -540,26 +535,26 @@ hr {
     margin: 1rem 0;
 }
 
-section.top-products .food-slider .food-card h3 {
+section.top-products .food-salad .food-card h3 {
     margin-bottom: 0.25rem;
 }
 
-section.top-products .food-slider .food-card .stars {
+section.top-products .food-salad .food-card .stars {
     margin-bottom: 0.5rem;
 }
 
-section.top-products .food-slider .food-card .stars img {
+section.top-products .food-salad .food-card .stars img {
     margin-right: .25rem;
 }
 
-section.top-products .food-slider .food-card .price {
+section.top-products .food-salad .food-card .price {
        font-family: Arial, Helvetica, sans-serif;
 
     color: #FE4545;
     margin-bottom: 1rem;
 }
 
-section.top-products .food-slider .food-card button {
+section.top-products .food-salad .food-card button {
        font-family: Arial, Helvetica, sans-serif;
 
     color: #232B38;
@@ -583,26 +578,26 @@ section.top-products .food-slider .food-card button {
 }
 
 /* @media (max-width: 600px) {
-    section.top-products .food-slider .food-card {
+    section.top-products .food-salad .food-card {
       width: 100%; 
       margin: 10px 0;
     }
 
   } */
 
-section.top-products .food-slider .food-card button:hover {
+section.top-products .food-salad .food-card button:hover {
     background: #EEBF00;
     color: #FFFFFF;
 }
 
-.food-slider .food-card button img {
+.food-salad .food-card button img {
     background: #EEBF00;
     padding: 0.50rem;
     height: 32px;
     margin-right: 1.2rem;
 }
 
-/* slick slider css */
+/* slick salad css */
 .slick-slide {
     margin: 0 27px;
 }
@@ -615,8 +610,8 @@ section.top-products .food-slider .food-card button:hover {
     padding: 1rem 0;
 }
 
-/* slick slider custom button */
-.top-products .slider-btn {
+/* slick salad custom button */
+.top-products .salad-btn {
     width: 30px;
     height: 30px;
     border: none;
@@ -629,7 +624,7 @@ section.top-products .food-slider .food-card button:hover {
     cursor: pointer;
 }
 
-.top-products .slider {
+.top-products .salad {
     position: relative;
 }
 
@@ -910,13 +905,17 @@ section.contact-us .contact-info>div>div img {
     margin-right: 1rem;
 }
 
+section.contact-us .contact-info span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 section.contact-us .contact-info>div>div>div {
     display: flex;
     flex-direction: column;
 }
 
 section.contact-us .contact-info>div>div>div span:first-child {
-    font-family: "Raleway-bold";
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0.25rem;
 }
 
@@ -1044,7 +1043,7 @@ footer.copyright a {
         top: 100px;
     }
 
-    .top-products .slider-btn {
+    .top-products .salad-btn {
         display: none !important;
     }
 
@@ -1110,8 +1109,7 @@ footer.copyright a {
     }
 
     .hero .hero-image {
-        right: -235px;
-        top: 150px;
+        display: none;   
     }
 
     section.big-deal .timer {
@@ -1127,8 +1125,13 @@ footer.copyright a {
         padding-left: 0.50rem;
     }
 
-        section.top-products .food-slider {
+        section.top-products .food-salad {
+        padding:20px;
         flex-direction: column;
+        margin: auto;
+        } 
+        section.top-products .food-salad food-card {
+        width: 200px;
         } 
         section.contact-us{
             flex-direction: column;
